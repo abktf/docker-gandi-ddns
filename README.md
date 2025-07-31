@@ -12,7 +12,7 @@ Dynamic DNS Update Client for Gandi's LiveDNS.
 Pull the latest image from Docker Hub:
 
 ```shell
-docker pull wastrachan/gandi-ddns
+docker pull abkumar/gandi-ddns:latest
 ```
 
 #### Github Container Registry
@@ -28,7 +28,7 @@ docker pull ghcr.io/wastrachan/gandi-ddns
 Clone this repository, and run `make build` to build an image:
 
 ```shell
-git clone https://github.com/wastrachan/docker-gandi-ddns.git
+git clone https://github.com/abktf/docker-gandi-ddns.git
 cd gandi-ddns
 make build
 ```
@@ -42,9 +42,11 @@ Run this image with the `make run` shortcut, or manually with `docker run`. You'
 ```shell
 docker run --name gandi-ddns \
            --rm \
-           -e GANDI_KEY="12343123abcd" \
+           -e GANDI_PAT="12343123abcd" \
            -e GANDI_DOMAIN="mydomain.net" \
-           wastrachan/gandi-ddns:latest
+           -e GANDI_RECORD="name" \
+           -e UPDATE_SCHEDULE="*/5 * * * *"
+           abkumar/gandi-ddns:latest
 ```
 
 ## Configuration
