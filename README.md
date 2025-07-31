@@ -2,9 +2,6 @@
 
 Dynamic DNS Update Client for Gandi's LiveDNS.
 
-[![](https://circleci.com/gh/wastrachan/docker-gandi-ddns.svg?style=svg)](https://circleci.com/gh/wastrachan/docker-gandi-ddns)
-[![](https://img.shields.io/docker/pulls/wastrachan/gandi-ddns.svg)](https://github.com/abktf/docker-gandi-ddns)
-
 ## Install
 
 #### Docker Hub
