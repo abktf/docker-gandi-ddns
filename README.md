@@ -20,7 +20,7 @@ docker pull abkumar/gandi-ddns:latest
 Or, pull from the GitHub Container Registry:
 
 ```shell
-docker pull ghcr.io/wastrachan/gandi-ddns
+docker pull ghcr.io/abktf/docker-gandi-ddns:latest
 ```
 
 #### Build From Source
